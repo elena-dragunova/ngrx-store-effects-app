@@ -44,10 +44,12 @@ export function reducer(
             }
         }
         case fromPizzas.LOAD_PIZZAS_SUCCESS: {
+            const data = actions.payload;
             return {
                 ...state,
                 loading: false,
-                loaded: true
+                loaded: true,
+                data
             }
         }
     }
