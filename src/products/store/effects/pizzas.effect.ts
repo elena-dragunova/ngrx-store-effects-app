@@ -1,7 +1,7 @@
-import { Injectable } from "@angular/core";
-import { Effect, Actions } from "@ngrx/effects";
+import { Injectable } from '@angular/core';
+import { Effect, Actions } from '@ngrx/effects';
 import { of } from 'rxjs/Observable/of';
-import { switchMap, map, catchError } from "rxjs/operators";
+import { switchMap, map, catchError } from 'rxjs/operators';
 
 import * as pizzaActions from '../actions/pizzas.action';
 import * as fromServices from '../../services';
